@@ -1,11 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Typer.js -->
+  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <style>
+    @font-face {
+      font-family: 'STRETCH';
+      src: url('fonts/STRRETCH SANS FREE.ttf');
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+    h1 {
+      font-family: 'STRETCH', sans-serif;
+    }
+
+    ul,
+    h2 {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    #particles-js,
+    #particles-section-2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body>
-    
+
+<body class="bg-[#e5e5e5] overflow-x-hidden">
+
+  <!-- Section 1 -->
+  <section class="relative h-screen w-full">
+    <div id="particles-js"></div>
+
+    <!-- Navbar -->
+    <nav class="flex justify-around p-4 bg-white text-lg font-bold uppercase rounded-xl m-4 z-10 relative">
+      <ul>Home</ul>
+      <ul>About</ul>
+      <ul>Projects</ul>
+      <ul>Contact</ul>
+    </nav>
+
+    <!-- Center Content -->
+    <div class="h-[calc(100vh-96px)] flex items-center justify-center px-4">
+      <h1 class="text-center text-6xl text-gray-800 opacity-90 tracking-wide">
+        <span class="typer" id="main" data-words="PANKAJ SAGVEKAR" data-delay="100" data-deleteDelay="1000"></span>
+        <span class="cursor text-3xl" data-owner="main"></span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="relative h-screen w-full bg-white">
+    <div id="particles-section-2"></div>
+    <div class="">
+      <h2 class="text-4xl text-black text-center">dfjhjkdshf</h2>
+    </div>
+  </section>
+
+  <!-- Particle Configs -->
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#888888" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#aaaaaa",
+          opacity: 0.4,
+          width: 1
+        },
+        move: { enable: true, speed: 3 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+
+    particlesJS("particles-section-2", {
+      particles: {
+        number: { value: 60, density: { enable: true, value_area: 800 } },
+        color: { value: "#cccccc" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 120,
+          color: "#bbbbbb",
+          opacity: 0.4,
+          width: 1
+        },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+
 </body>
+
 </html>

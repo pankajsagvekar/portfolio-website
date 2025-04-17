@@ -25,9 +25,10 @@
 
     h1 {
       font-family: 'STRETCH', sans-serif;
+
     }
 
-    ul,
+    nav,
     h2 {
       font-family: 'Space Grotesk', sans-serif;
     }
@@ -55,16 +56,20 @@
     <div id="particles-js"></div>
 
     <!-- Navbar -->
-    <nav class="flex justify-around p-4 bg-white text-lg font-bold uppercase rounded-xl m-4 z-10 relative">
-      <ul>Home</ul>
-      <ul>About</ul>
-      <ul>Projects</ul>
-      <ul>Contact</ul>
+    <nav class="flex justify-around text-lg font-bold uppercase z-10 relative">
+      <a href="#" class="bg-transparent text-black border border-black border-r-0 w-full h-auto text-center p-3 hover:bg-white hover:text-black hover:cursor-pointer">Home</a>
+      <a href="#" class="bg-transparent text-black border border-black border-r-0 w-full h-auto text-center p-3 hover:bg-white hover:text-black hover:cursor-pointer">About</a>
+      <a href="#" class="bg-transparent text-black border border-black border-r-0 w-full h-auto text-center p-3 hover:bg-white hover:text-black hover:cursor-pointer">Projects</a>
+      <a href="#" class="bg-transparent text-black border border-black border-r-0 w-full h-auto text-center p-3 hover:bg-white hover:text-black hover:cursor-pointer">Contact</a>
     </nav>
+
 
     <!-- Center Content -->
     <div class="h-[calc(100vh-96px)] flex items-center justify-center px-4">
-      <h1 class="text-center text-6xl text-gray-800 opacity-90 tracking-wide">
+      <img src="img/robot.png" 
+       alt="Robot" 
+       class="absolute w-1/2 opacity-50 z-0" />
+      <h1 class="text-center text-6xl opacity-90 tracking-wide z-10 text-whi">
         <span class="typer" id="main" data-words="PANKAJ SAGVEKAR" data-delay="100" data-deleteDelay="1000"></span>
         <span class="cursor text-3xl" data-owner="main"></span>
       </h1>
